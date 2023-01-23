@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6126743b7b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <img src="Vector.png" alt="Logo Alura" class="logo-alura">
+    </header>
+
+    <main class="container">
+        <section class="contenido-izquierdo">
+            <div class="caja-mensaje">
+                <textarea id="textareaMensaje" name="" cols="30" rows="10" class="mensaje" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="text-aviso">
+                <img src="Vector.png" alt="" class="img-admiracion">
+                <p class="text-descripcion "> Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button type="button" id="btnEncriptar" class="encriptar">Encriptar</button>
+                <button type="button" id="btnDesencriptar" class="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="contenido-derecho">
+            <div class="caja-mensaje-2">
+                <div id="mostrar" class="oculto">
+                    <div class="caja-resultado">
+                        <textarea name="" id="textareaResultado" cols="30" rows="10" class="resultado" placeholder=""></textarea>
+                    </div>
+                    <div class="boton-copy">
+                        <button type="button" id="btnCopiar" class="copiar">Copiar</button>
+                    </div>
+                </div>
+                <div id="ocultar"  class="cont-info activo">
+                    <img src="Muñeco.png" alt="Muñeco con lupa" class="munheco">
+                    <h2 class="info-1">Ningún mensaje fue encontrado</h2>
+                    <p class="info-2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="iconos">
+            <a href="https://www.linkedin.com/in/eduardo-rivas-9a8523258/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/scorpionbeta" target="_blank"><i class="fa-brands fa-github"></i></a>
+            
+        </div>
+        <div>
+            <p class="copyright">&copy; Challenge realizado para el programa ONE de Alura Latam y Oracle - 2023</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
+    
+</body>
+</html>
